@@ -4,3 +4,11 @@ Takes the output of dirbuster DNS and relates the subdomains to an IP, then tab 
 
 # USAGE
 subdomain_ip_lister /path/to/saved/gobuster/output
+
+# Build instructions & install
+```
+rustup install stable
+cd subdomain_ip_lister
+cargo build
+sudo cp target/debug/subdomain_ip_lister /usr/bin/
+```
